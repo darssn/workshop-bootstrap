@@ -43,125 +43,134 @@
 
     </nav>
 
-    <div class="container-fluid">
-
-
-
+    <main class="container-fluid ">
 
         <div class="row">
-            <div class="col mt-2 ">
+            <div class="col-12 mt-2 ">
                 <h1>Nouveau Collaborateur</h1>
             </div>
-
         </div>
 
-
-        <form method="" action="#" style="margin-top:50px">
+        <form method="" action="#" style="margin-top:50px" class="offset-xl-1">
 
             <div class="row mt-2 mb-2">
-                <div class="col-2 offset-1">
+                <div class="col-12 col-xl-3">
                     <label for="nom">Nom</label>
                 </div>
-                <div class="col">
+                <div class="col-12 col-xl-6">
                     <div class="row">
-                        <input type="text" id="nom" name="nom" style="width: 400px;">
+                        <div class="col-12">
+                            <input type="text" id="nom" name="nom" class="form-control">
+                        </div>
                     </div>
                     <div class="row">
-                        <small id="nomHelp" class="text-danger">
-                            Le nom est obligatoire.
-                        </small>
+                        <div class="col-12">
+                            <small id="nomHelp" class="text-danger">
+                                Le nom est obligatoire.
+                            </small>
+                        </div>
                     </div>
-
                 </div>
-
 
             </div>
 
             <div class="row mb-2 mt-2">
-                <div class="col-2 offset-1">
+                <div class="col-12 col-xl-3">
                     <label for="prenom">Prénom</label>
                 </div>
-                <div class="col">
+                <div class="col-12 col-xl-6">
                     <div class="row">
-                        <input type="text" id="prenom" name="prenom" style="width: 400px;">
+                        <div class="col-12">
+                            <input type="text" id="prenom" name="prenom" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <small id="prenomHelp" class="text-danger">
+                                Le prénom est obligatoire.
+                            </small>
+                        </div>
                     </div>
 
 
-                    <div class="row">
-                        <small id="prenomHelp" class="text-danger">
-                            Le prénom est obligatoire.
-                        </small>
-                    </div>
                 </div>
-
             </div>
 
             <div class="row mb-2 mt-2">
-                <div class="col-2 offset-1">
+                <div class="col-12 col-xl-3">
                     <label for="dateNaissance">Date de naissance</label>
                 </div>
-                <div class="col">
+                <div class="col-12 col-xl-6">
                     <div class="row">
-                        <input type="text" id="dateNaissance" name="dateNaissance" style="width: 400px;">
+                        <div class="col-12">
+                            <input type="text" id="dateNaissance" name="dateNaissance" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <small id="dateNHelp" class="text-danger">
+                                La date de naissance est obligatoire.
+                            </small>
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <small id="dateNaissanceHelp" class="text-danger">
-                            La date de naissance est obligatoire.
-                        </small>
-                    </div>
+
                 </div>
 
             </div>
-
-
-
-
-
             <div class="row mb-2 mt-2">
-                <div class="col-2 offset-1">
+                <div class="col-12 col-xl-3">
                     <label for="adresse">Adresse</label>
                 </div>
-                <div class="col">
+                <div class="col-12 col-xl-6">
                     <div class="row">
-                        <textarea id="adresse" name="adresse" rows="3" style="width: 400px;"></textarea>
+                        <div class="col-12">
+                            <textarea id="adresse" name="adresse" rows="3" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <small id="adresseHelp" class="text-danger">
+                                L'adresse est obligatoire.
+                            </small>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="row">
-                        <small id="adresseHelp" class="text-danger">
-                            L'adresse est obligatoire.
-                        </small>
-                    </div>
+
                 </div>
 
+
             </div>
-
-
-
             <div class="row mb-2 mt-2">
-                <div class="col-2 offset-1">
+                <div class="col-12 col-xl-3">
                     <label for="numSS">Numéro de sécurité social</label>
                 </div>
-                <div class="col">
+                <div class="col-12 col-xl-6">
                     <div class="row">
-                        <input type="text" id="numSS" name="numSS" style="width: 400px;">
+                        <div class="col-12">
+                            <input type="text" id="numSS" name="numSS" class="form-control">
+                        </div>
                     </div>
                     <div class="row">
-                        <small id="NumSSHelp" class="text-danger">
-                            Le numéro de sécurité social est obligatoire.
-                        </small>
+                        <div class="col-12">
+                            <small id="numSSHelp" class="text-danger">
+                                Le numéro de sécurité social est obligatoire.
+                            </small>
+                        </div>
+
                     </div>
                 </div>
 
+
             </div>
 
-
-
-            <div class="row" style="margin-top:20px">
-                <div class="col offset-5">
-                    <button type="button" data-toggle="modal" data-target="#formModal">Créer</button>
+            <div class="row" style="margin-top:20px;margin-bottom:50px;">
+                <div class="col offset-8">
+                    <button class="btn btn-primary" type="button" data-toggle="modal"
+                        data-target="#formModal">Créer</button>
                 </div>
             </div>
+
 
             <!-- Modal -->
             <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -169,12 +178,14 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Création d'un collaborateur</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Création d'un
+                                collaborateur</h5>
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col">
-                                    <p>Vous êtes sur le point de créer un nouveau collaborateur</p>
+                                    <p>Vous êtes sur le point de créer un nouveau
+                                        collaborateur</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -227,10 +238,13 @@
             </div>
 
 
+        </form>
 
-    </div>
 
-    </form>
+
+
+    </main>
+
 
 
 

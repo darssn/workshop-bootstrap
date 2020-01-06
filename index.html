@@ -43,47 +43,51 @@ no">
 
 
     </nav>
-    <div class="container-fluid">
-
-        <div class="row mt-1">
-            <div class="col-4 col-sm-3 offset-8 mt-2">
-                <a class="btn btn-primary" href="creer.html" role="button">Ajouter un nouveau collaborateur</a>
-            </div>
-        </div>
-
+    <main class="container-fluid">
 
         <div class="row">
-
-            <div class="col offset-1">
+            <div class="col-12 mt-2">
                 <h1>Les collaborateurs</h1>
             </div>
 
         </div>
 
+        <div class="row mt-1" style="margin-bottom : 50px">
+            <div class="col-12 col-xl-4 offset-xl-10 mt-2">
+                <a class="btn btn-primary" href="creer.html" role="button">Ajouter un nouveau collaborateur</a>
+            </div>
+        </div>
 
 
 
-        <form method="" action="#">
+
+        <form method="" action="#" style="margin-bottom : 60px">
 
             <div class="row">
-                <div class="col-4 offset-1 text-right">
+
+                <div class="col-xl-3 col-12 text-xl-right ">
+
                     <label for="recherche">Rechercher un nom ou un prénom qui commence par :</label>
-                    <input type="text" id="recherche" style="width: 200px;">
+
                 </div>
-                <div class="col-2">
-                    <button type="submit">Rechercher</button>
+
+                <div class="col-xl-3 col-12 ">
+                    <input type="text" id="recherche" class="form-control">
                 </div>
-                <div class="col-2">
-                    <input type="checkbox"> Voir les collaborateurs désactivés
+
+                <div class="col-xl-2 col-12 mt-2">
+                    <input type="checkbox" class="form-check-label"> Voir les collaborateurs désactivés
                 </div>
+
             </div>
 
-
-            <div class="row" style="margin-bottom : 150px">
-                <div class="col-4 offset-1 text-right">
+            <div class="row" style="margin-top:20px">
+                <div class="col-12 col-xl-3  text-xl-right">
                     <label for="filtreDep">Filtrer par département : </label>
+                </div>
+                <div class="col-12 col-xl-3">
 
-                    <select id="filtreDep" name="filtre" style="width: 200px;">
+                    <select id="filtreDep" name="filtre" class="form-control">
                         <option value="Tous">Tous</option>
                         <option value="Comptabilité">Comptabilité</option>
                         <option value="Ressources Humaines">Ressources Humaines</option>
@@ -91,39 +95,67 @@ no">
                     </select>
                 </div>
             </div>
+            </div>
+
+            <div class="row" style="margin-top:20px">
+                <div class="col-xl-2 offset-xl-5 offset-7">
+                    <button class="btn btn-primary"type="submit">Rechercher</button>
+                </div>
+            </div>
+
+
+            
 
         </form>
 
-        
+        <div class="row">
 
-
-
-
-        <div class="row mb-2">
-            <div class="col-3 offset-1">
-                <div class="card ">
+            <div class="col-12 col-xl-4  mb-2 mt-2">
+                <div class="card">
                     <h5 class="card-header">Nom Prénom</h5>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-2">
+
+                            <div class="col-12 col-xl-2 text-center">
                                 <img src="img/carre.png" width="80" height="80">
-
                             </div>
-                            <div class="col-4 offset-1">
-                                <p class="card-text"> Fonction</p>
-                                <p class="card-text"> Département</p>
-                                <p class="card-text"> Email</p>
-                                <p class="card-text"> Téléphone</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-
+                            <div class="col offset-xl-1">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Fonction</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Département</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Email</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Téléphone</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+
                         <div class="row mb-1 mt-2 pt-2">
                             <div class="col offset-8">
                                 <a class="btn btn-primary" href="editer.html" role="button">Editer</a>
@@ -131,211 +163,298 @@ no">
 
                         </div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4  mb-2 mt-2">
+                <div class="card">
+                    <h5 class="card-header">Nom Prénom</h5>
+                    <div class="card-body">
+                        <div class="row">
+
+                            <div class="col-12 col-xl-2 text-center">
+                                <img src="img/carre.png" width="80" height="80">
+                            </div>
+                            <div class="col offset-xl-1">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Fonction</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Département</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Email</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Téléphone</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-1 mt-2 pt-2">
+                            <div class="col offset-8">
+                                <a class="btn btn-primary" href="editer.html" role="button">Editer</a>
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card ">
+
+            <div class="col-12 col-xl-4  mb-2 mt-2">
+                <div class="card">
                     <h5 class="card-header">Nom Prénom</h5>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-2">
+
+                            <div class="col-12 col-xl-2 text-center">
                                 <img src="img/carre.png" width="80" height="80">
-
                             </div>
-                            <div class="col-4 offset-1">
-                                <p class="card-text"> Fonction</p>
-                                <p class="card-text"> Département</p>
-                                <p class="card-text"> Email</p>
-                                <p class="card-text"> Téléphone</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-
+                            <div class="col offset-xl-1">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Fonction</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Département</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Email</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Téléphone</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+
                         <div class="row mb-1 mt-2 pt-2">
                             <div class="col offset-8">
-                                <button>Editer</button>
+                                <a class="btn btn-primary" href="editer.html" role="button">Editer</a>
                             </div>
 
                         </div>
-
 
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card ">
+
+            <div class="col-12 col-xl-4  mb-2 mt-2">
+                <div class="card">
                     <h5 class="card-header">Nom Prénom</h5>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-2">
+
+                            <div class="col-12 col-xl-2 text-center">
                                 <img src="img/carre.png" width="80" height="80">
-
                             </div>
-                            <div class="col-4 offset-1">
-                                <p class="card-text"> Fonction</p>
-                                <p class="card-text"> Département</p>
-                                <p class="card-text"> Email</p>
-                                <p class="card-text"> Téléphone</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-
+                            <div class="col offset-xl-1">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Fonction</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Département</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Email</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Téléphone</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+
                         <div class="row mb-1 mt-2 pt-2">
                             <div class="col offset-8">
-                                <button>Editer</button>
+                                <a class="btn btn-primary" href="editer.html" role="button">Editer</a>
                             </div>
 
                         </div>
 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-4  mb-2 mt-2">
+                <div class="card">
+                    <h5 class="card-header">Nom Prénom</h5>
+                    <div class="card-body">
+                        <div class="row">
+
+                            <div class="col-12 col-xl-2 text-center">
+                                <img src="img/carre.png" width="80" height="80">
+                            </div>
+                            <div class="col offset-xl-1">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Fonction</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Département</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Email</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Téléphone</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-1 mt-2 pt-2">
+                            <div class="col offset-8">
+                                <a class="btn btn-primary" href="editer.html" role="button">Editer</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-4   mb-2 mt-2">
+                <div class="card">
+                    <h5 class="card-header">Nom Prénom</h5>
+                    <div class="card-body">
+                        <div class="row">
+
+                            <div class="col-12 col-xl-2 text-center">
+                                <img src="img/carre.png" width="80" height="80">
+                            </div>
+                            <div class="col offset-xl-1">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Fonction</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Département</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ************</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Email</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text"> Téléphone</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text"> ***********</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-1 mt-2 pt-2">
+                            <div class="col offset-8">
+                                <a class="btn btn-primary" href="editer.html" role="button">Editer</a>
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="row">
-            <div class="col-3 offset-1">
-                <div class="card ">
-                    <h5 class="card-header">Nom Prénom</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-2">
-                                <img src="img/carre.png" width="80" height="80">
-
-                            </div>
-                            <div class="col-4 offset-1">
-                                <p class="card-text"> Fonction</p>
-                                <p class="card-text"> Département</p>
-                                <p class="card-text"> Email</p>
-                                <p class="card-text"> Téléphone</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-
-                            </div>
-
-                        </div>
-                        <div class="row mb-1 mt-2 pt-2">
-                            <div class="col offset-8">
-                                <button>Editer</button>
-                            </div>
-
-                        </div>
 
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card ">
-                    <h5 class="card-header">Nom Prénom</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-2">
-                                <img src="img/carre.png" width="80" height="80">
-
-                            </div>
-                            <div class="col-4 offset-1">
-                                <p class="card-text"> Fonction</p>
-                                <p class="card-text"> Département</p>
-                                <p class="card-text"> Email</p>
-                                <p class="card-text"> Téléphone</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-
-                            </div>
-
-                        </div>
-                        <div class="row mb-1 mt-2 pt-2">
-                            <div class="col offset-8">
-                                <button>Editer</button>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card ">
-                    <h5 class="card-header">Nom Prénom</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-2">
-                                <img src="img/carre.png" width="80" height="80">
-
-                            </div>
-                            <div class="col-4 offset-1">
-                                <p class="card-text"> Fonction</p>
-                                <p class="card-text"> Département</p>
-                                <p class="card-text"> Email</p>
-                                <p class="card-text"> Téléphone</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-                                <p class="card-text"> **************</p>
-
-                            </div>
-
-                        </div>
-                        <div class="row mb-1 mt-2 pt-2">
-                            <div class="col offset-8">
-                                <button>Editer</button>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </main>
 
 
     <!-- TODO -->
