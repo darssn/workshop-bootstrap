@@ -47,6 +47,236 @@
 
 
 
+        <div class="row " style="margin-top:50px">
+            <div class="col-3 text-center">
+                <img src="img/photo.png">
+            </div>
+
+            <div class="col-7">
+                <div class="row mb-2">
+                    <div class="col-5 ">
+                        <h2>Nom Prénom - Matricule</h2>
+                    </div>
+                    <div class="col-2 my-auto">
+                        <input type="checkbox"> Désactiver</input>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Identité
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+
+                                        <form action="#" method="">
+
+
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="civ">Civilité</label>
+                                                </div>
+                                                <div class="col">
+                                                    <select id="civ" name="civ">
+                                                        <option value="Mr">Mr</option>
+                                                        <option value="M">M</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="nom">Nom</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <input type="text" id="nom">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="prenom">Prenom</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <input type="text" id="prenom">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="dateN">Date de naissance</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <input type="text" id="dateN">
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="adresse">Adresse</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <textarea id="adresse"></textarea>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="numSS">Numéro de sécurité sociale</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <input type="text" id="sumSS">
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="tel">Télephone</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <input type="tel" id="tel">
+                                                </div>
+
+                                            </div>
+
+
+                                        </form>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Poste
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <form action="#" method="">
+
+
+
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="dep">Département</label>
+                                                </div>
+                                                <div class="col">
+                                                    <select id="dep" name="dep">
+                                                        <option value="Tous">Tous</option>
+                                                        <option value="Comptabilité">Comptabilité</option>
+                                                        <option value="Ressources Humaines">Ressources Humaines</option>
+                                                        <option value="Informatique">Informatique</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="nomPoste">Nom</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <input type="text" id="nomPoste">
+                                                </div>
+
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Coordonnées Bancaires
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <form action="#" method="">
+
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="iban">IBAN</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <input type="text" id="iban">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col text-right">
+                                                    <label for="bic">BIC</label>
+                                                </div>
+
+                                                <div class="col">
+                                                    <input type="text" id="bic">
+                                                </div>
+
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-2 offset-10 mt-2">
+
+                            <button>Sauvegarder</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
 
 
 
@@ -56,19 +286,9 @@
 
 
 
-        
 
     </div>
-
-
-
-
-
-
-
-
-
-        <!-- TODO -->
+    <!-- TODO -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-
@@ -80,4 +300,5 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
