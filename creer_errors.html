@@ -62,8 +62,16 @@
                 <div class="col-2 offset-1">
                     <label for="nom">Nom</label>
                 </div>
-                <div class="col-4">
-                    <input type="text" id="nom" name="nom" style="width: 400px;">
+                <div class="col">
+                    <div class="row">
+                        <input type="text" id="nom" name="nom" style="width: 400px;">
+                    </div>
+                    <div class="row">
+                        <small id="nomHelp" class="text-danger">
+                            Le nom est obligatoire.
+                        </small>
+                    </div>
+
                 </div>
 
 
@@ -74,7 +82,16 @@
                     <label for="prenom">Prénom</label>
                 </div>
                 <div class="col">
-                    <input type="text" id="prenom" name="prenom" style="width: 400px;">
+                    <div class="row">
+                        <input type="text" id="prenom" name="prenom" style="width: 400px;">
+                    </div>
+
+
+                    <div class="row">
+                        <small id="prenomHelp" class="text-danger">
+                            Le prénom est obligatoire.
+                        </small>
+                    </div>
                 </div>
 
             </div>
@@ -84,10 +101,21 @@
                     <label for="dateNaissance">Date de naissance</label>
                 </div>
                 <div class="col">
-                    <input type="text" id="dateNaissance" name="dateNaissance" style="width: 400px;">
+                    <div class="row">
+                        <input type="text" id="dateNaissance" name="dateNaissance" style="width: 400px;">
+                    </div>
+
+                    <div class="row">
+                        <small id="dateNaissanceHelp" class="text-danger">
+                            La date de naissance est obligatoire.
+                        </small>
+                    </div>
                 </div>
 
             </div>
+
+
+
 
 
             <div class="row mb-2 mt-2">
@@ -95,7 +123,15 @@
                     <label for="adresse">Adresse</label>
                 </div>
                 <div class="col">
-                    <textarea id="adresse" name="adresse" rows="3" style="width: 400px;"></textarea>
+                    <div class="row">
+                        <textarea id="adresse" name="adresse" rows="3" style="width: 400px;"></textarea>
+
+                    </div>
+                    <div class="row">
+                        <small id="adresseHelp" class="text-danger">
+                            L'adresse est obligatoire.
+                        </small>
+                    </div>
                 </div>
 
             </div>
@@ -107,8 +143,16 @@
                     <label for="numSS">Numéro de sécurité social</label>
                 </div>
                 <div class="col">
-                    <input type="text" id="numSS" name="numSS" style="width: 400px;">
+                    <div class="row">
+                        <input type="text" id="numSS" name="numSS" style="width: 400px;">
+                    </div>
+                    <div class="row">
+                        <small id="NumSSHelp" class="text-danger">
+                            Le numéro de sécurité social est obligatoire.
+                        </small>
+                    </div>
                 </div>
+
             </div>
 
 
@@ -120,11 +164,12 @@
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Création d'un collaborateur</h5>                           
+                            <h5 class="modal-title" id="exampleModalLabel">Création d'un collaborateur</h5>
                         </div>
                         <div class="modal-body">
                             <div class="row">
@@ -186,8 +231,6 @@
     </div>
 
     </form>
-
-    <a class="btn btn-primary" href="creer_errors.html" role="button">Afficher les erreurs formulaire</a>
 
 
 
